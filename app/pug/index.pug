@@ -1,0 +1,198 @@
+doctype html
+
+include var/global.pug
+include var/mixins.pug
+
+html
+	include includes/head.pug
+	body 
+		header.header
+			ul.header__menu
+				li
+					a(href="") About us
+					.line
+				li
+					a(href="") Reservation
+					.line
+				li
+					a(href="") Gallery
+					.line
+			.header__logo
+				a(href="")
+					+ image("logo.png", "logo")
+			ul.header__menu
+				li
+					a(href="") Blog
+				li
+					a(href="") Elements
+				li
+					a(href="") Shop
+		.banner
+			form.banner__form
+				h2 Trial Class
+				input(type="text", placeholder="Enter your name")
+				|
+				br
+				input(type="tel", placeholder="Enter your phone")
+				|
+				br
+				select
+					option Chose your class
+					option Yoga for health
+					option Yoga for children
+					option Yoga for lose weight
+					option Yoga for elderly
+				|
+				br
+				button(type='submit') Try it
+			.banner__title
+				h1 
+					| Just Balance
+					br
+					| your Mind & Body
+				p 
+					| Create the healthy living
+					br 
+					| for yourself
+		.description
+			.description__title
+				h2 YOGA FEATURE PROGRAM
+				p Our Classes
+			.description__blocks
+				.description__block
+					+ image("img1.jpg", "image1")
+					.description__block_text
+						p.title Yoga For Health
+						p Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+						p Ashtanga - Hatha 
+				.description__block
+					+ image("img2.jpg", "image2")
+					.description__block_text
+						p.title Yoga For Weight
+						p Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+						p Ashtanga - Hatha 
+				.description__block
+					+ image("img3.jpg", "image3")
+					.description__block_text
+						p.title Yoga For Children
+						p Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+						p Ashtanga - Hatha 
+				.description__block
+					+ image("img4.jpg", "image4")
+					.description__block_text
+						p.title Yoga For Elderly
+						p Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+						p Ashtanga - Hatha
+		.gallery
+			.gallery__link
+				+ image("img5.jpg", "image5")
+				a(href="")
+			.gallery__link
+				+ image("img6.jpg", "image6")
+				a(href="")
+			.gallery__link
+				+ image("img7.jpg", "image7")
+				a(href="")
+			.gallery__link
+				+ image("img8.jpg", "image8")
+				a(href="")
+			.gallery__link
+				+ image("img9.jpg", "image9")
+				a(href="")
+			.gallery__link
+				+ image("img10.jpg", "image10")
+				a(href="")
+			.gallery__link
+				+ image("img11.jpg", "image11")
+				a(href="")
+			.gallery__link
+				+ image("img12.jpg", "image12")
+				a(href="")
+		.aboutBlock
+			.aboutBlock__desript
+				h2 About Us
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.
+			.aboutBlock__slider
+				.single-item
+					div 
+						+ image("img13.jpg", "image13")
+					div
+						+ image("img13.jpg", "image13")
+					div
+						+ image("img13.jpg", "image13")
+			.clear
+		.features
+			.features__content
+				.features__content_block
+					i.sprite.sprite-feature1.iconFeature
+					p.title 
+						| IMPROVED OVERALL
+						br
+						| HEALTH
+					p Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.features__content_block
+					i.sprite.sprite-feature2
+					p.title 
+						| INCREASED 
+						br 
+						| CONCENTRATION
+					p Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.features__content_block
+					i.sprite.sprite-feature3
+					p.title 
+						| BLANCE
+						br 
+						| YOUR MIND
+					p Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.features__content_block
+					i.sprite.sprite-feature4
+					p.title 
+						| SLEEP 
+						br 
+						| BETTER
+					p Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.features__content_block
+					i.sprite.sprite-feature5
+					p.title WEIGHT LOSS
+					p Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.features__content_block
+					i.sprite.sprite-feature6
+					p.title 
+						| STRENGTHENS 
+						br 
+						| YOUR BONES
+					p Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.features__content_block
+					i.sprite.sprite-feature7
+					p.title 
+						| INCREASED 
+						br 
+						| FLEXIBILITY
+					p Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.features__content_block
+					i.sprite.sprite-feature8
+					p.title LOWER BLOOD
+					p Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+		script(src="js/jquery-3.2.1.min.js")
+		script(src="js/slick.min.js")
+		script(src="js/user.js")
+
+//
+//i.sprite.sprite-envelope
+//i.sprite.sprite-facebook
+//i.sprite.sprite-feature1
+//i.sprite.sprite-feature2
+//i.sprite.sprite-feature3
+//i.sprite.sprite-feature4
+//i.sprite.sprite-feature5
+//i.sprite.sprite-feature6
+//i.sprite.sprite-feature7
+//i.sprite.sprite-feature8
+//i.sprite.sprite-google
+//i.sprite.sprite-instagram
+//i.sprite.sprite-left
+//i.sprite.sprite-pinterest
+//i.sprite.sprite-planet-earth
+//i.sprite.sprite-right
+//i.sprite.sprite-search
+//i.sprite.sprite-twitter
