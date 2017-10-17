@@ -117,6 +117,10 @@ html {
 			position: absolute;
 			right: 0;
 			margin-right: 3.8rem;
+			&:hover {
+				cursor: pointer;
+				background-color: #6978ea;
+			}
 		}
 	}
 	.banner__title {
@@ -317,6 +321,9 @@ html {
 		}
 	}
 }
+.active {
+	background-color: #6978ea !important;
+}
 .prices {
 	display: flex;
 	justify-content: center;
@@ -330,7 +337,7 @@ html {
 		align-items: center;
 		margin-right: 3rem;
 		border-radius: 10px;
-		box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		box-shadow: 0 0 25px 10px rgba(0,0,0,0.1);
 		.prices__block_header {
 			width: 100%;
 			height: 148px;
@@ -393,10 +400,61 @@ html {
 			margin-bottom: 5rem;
 			&:hover {
 				cursor: pointer;
-				background: #6978ea;
+				background-color: #6978ea;
 			}
-			&:hover.prices__block_header {
-				background: #6978ea;
+		}
+	}
+}
+.pricesWrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	.single-item {
+		max-width: 1170px;
+		margin: 0 auto;
+		.slick-prev {
+			position: absolute;
+			text-indent: -99999px;
+			background: url(../assets/img/left.png);
+			width: 67px;
+			height: 67px;
+			transform: scale(0.5);
+			z-index: 99;
+			top: calc(150px - (67px/2));
+			left: -40px;
+		}
+		.slick-next {
+			position: absolute;
+			text-indent: -99999px;
+			background: url(../assets/img/right.png);
+			width: 67px;
+			height: 67px;
+			z-index: 99;
+			bottom: calc(150px - (67px/2));
+			right: -5px;
+		}
+		.firstItem {
+			img {
+				padding: 1rem;
+				border: 2px solid #d8d8d8;
+				border-radius: 50%;
+			}
+			p:nth-of-type(1) {
+				font: 1.4rem/2.2rem "OpenSansItalic";
+				color: #555;
+				position: relative;
+				span {
+					font: 6rem/2.2rem "OpenSansRegular";
+					color: #5b6ceb;
+					position: absolute;
+				}
+			}
+			p:nth-of-type(2) {
+				font: 1.4rem/2.2rem "OpenSansRegular";
+				color: #777;
+			}
+			p:nth-of-type(3) {
+				font: 1.6rem/2.2rem "OpenSansBold";
+				color: #5b6ceb;
 			}
 		}
 	}
