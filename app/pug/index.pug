@@ -221,10 +221,11 @@ html
 							span "
 						p Trainer
 						p Laura Shepard
-					.item__next
-						+ image("img16.png", "image16")
-						p Sara Taylor
-						p Trainer
+						.item__next
+							+ image("img16.png", "image16")
+							.title
+								p Sara Taylor
+								p Trainer
 				.item 
 					+ image("img15.png", "image15")
 					.item__trainer
@@ -240,10 +241,11 @@ html
 							span "
 						p Trainer
 						p Laura Shepard
-					.firstItem__next
-						+ image("img16.png", "image16")
-						p Sara Taylor
-						p Trainer
+						.item__next
+							+ image("img16.png", "image16")
+							.title
+								p Sara Taylor
+								p Trainer
 				.item 
 					+ image("img15.png", "image15")
 					.item__trainer
@@ -259,30 +261,63 @@ html
 							span "
 						p Trainer
 						p Laura Shepard
-					.item__next
-						+ image("img16.png", "image16")
-						p Sara Taylor
-						p Trainer
+						.item__next
+							+ image("img16.png", "image16")
+							.title
+								p Sara Taylor
+								p Trainer
+		footer.footer
+			.footer__about
+				p.title ABOUT
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+					|
+					br 
+					| eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+					|
+					br 
+					| ad m inim veniam, quis nostrud exercitation toui ullamcomi laboris nisi
+					| 
+					br 
+					| ut aliquip ex ea commodo consequat.
+				.footer__icons
+					i.sprite.sprite-pinterest
+					i.sprite.sprite-twitter
+					+ image("facebook.png", "envelope")
+					i.sprite.sprite-google
+					i.sprite.sprite-instagram
+			.footer__contacts
+				p.title CONTACT US
+				.contacts__block
+					.contacts__block_item
+						i.sprite.sprite-placeholder
+							p 5419 Joseph Mountains Apt. 716
+						i.sprite.sprite-phone-call
+							p +1 234 567 89+1 234 678 90
+					.contacts__block_item
+						+ image("envelope.png", "envelope")
+							p joga.info@example.com
+						i.sprite.sprite-planet-earth
+							p www.example.com
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/slick.min.js")
 		script(src="js/user.js")
 
 //
-//i.sprite.sprite-envelope
-//i.sprite.sprite-facebook
-//i.sprite.sprite-feature1
-//i.sprite.sprite-feature2
-//i.sprite.sprite-feature3
-//i.sprite.sprite-feature4
-//i.sprite.sprite-feature5
-//i.sprite.sprite-feature6
-//i.sprite.sprite-feature7
-//i.sprite.sprite-feature8
-//i.sprite.sprite-google
-//i.sprite.sprite-instagram
-//i.sprite.sprite-left
-//i.sprite.sprite-pinterest
-//i.sprite.sprite-planet-earth
-//i.sprite.sprite-right
-//i.sprite.sprite-search
-//i.sprite.sprite-twitter
+//      i.sprite.sprite-feature1
+//      i.sprite.sprite-feature2
+//      i.sprite.sprite-feature3
+//      i.sprite.sprite-feature4
+//      i.sprite.sprite-feature5
+//      i.sprite.sprite-feature6
+//      i.sprite.sprite-feature7
+//      i.sprite.sprite-feature8
+//      i.sprite.sprite-google
+//      i.sprite.sprite-instagram
+//      i.sprite.sprite-left
+//      i.sprite.sprite-phone-call
+//      i.sprite.sprite-pinterest
+//      i.sprite.sprite-placeholder
+//      i.sprite.sprite-planet-earth
+//      i.sprite.sprite-right
+//      i.sprite.sprite-search
+//      i.sprite.sprite-twitter

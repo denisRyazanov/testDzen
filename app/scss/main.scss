@@ -273,9 +273,6 @@ html {
 				right: -5px;
 				cursor: pointer;
 			}
-			.slick-dots {
-				display: none !important;
-			}
 		}
 	}
 }
@@ -287,7 +284,6 @@ html {
 	height: 800px;
 	margin: 0 auto;
 	background: url(../assets/img/featuresBg.jpg);
-	margin-bottom: 100px;
 	.features__content {
 		display: flex;
 		justify-content: center;
@@ -333,6 +329,7 @@ html {
 	display: flex;
 	justify-content: center;
 	max-width: 1920px;
+	margin-bottom: 100px;
 	.prices__block {
 		width: 370px;
 		height: 100%;
@@ -414,6 +411,9 @@ html {
 	max-width: 1920px;
 	margin: 0 auto;
 	background-color: #f1f3ff;
+	padding-top: 100px;
+	background: url(../assets/img/Bg.png) no-repeat;
+	background-position: right bottom;
 	.single-item {
 		max-width: 1170px;
 		height: 250px;
@@ -426,10 +426,10 @@ html {
 			background: url(../assets/img/left.png);
 			width: 67px;
 			height: 67px;
-			transform: scale(0.7);
+			transform: scale(0.6);
 			z-index: 99;
-			top: calc(150px - (67px/2));
-			left: 40px;
+			top: 220px;
+			left: 350px;
 		}
 		.slick-next {
 			position: absolute;
@@ -438,30 +438,15 @@ html {
 			width: 67px;
 			height: 67px;
 			z-index: 99;
-//			bottom: calc(150px - (67px/2));
-			right: 10px;
-			transform: scale(0.7);
-		}
-		
-		.slick-dots {
-			position: relative;
-			left: 40px;
-			li {
-				list-style: none;
-			}
-		}
-		#slick-slide00, #slick-slide01, #slick-slide02 {
-			text-indent: -9999px;
-			background-color: grey;
-			width: 10px;
-			height: 10px;
-			border-radius: 50%;
+			bottom: -36px;
+			right: 450px;
+			transform: scale(0.6);
 		}
 		.item {
+			padding-top: 40px;
 			display: flex;
 			justify-content: center;
-			align-items: center;
-//			align-content: center;
+			align-items: flex-start;
 			flex-flow: wrap;
 			position: relative;
 			img {
@@ -471,30 +456,125 @@ html {
 				margin-right: 6rem;
 			}
 			.item__trainer {
+				margin-bottom: 100px;
 				p:nth-of-type(1) {
 					font: 1.4rem/2.2rem "OpenSansItalic";
 					color: #555;
 					position: relative;
 					margin-bottom: 3rem;
+					padding-left: 40px;
 					span {
 						font: 6rem/2.2rem "OpenSansRegular";
 						color: #5b6ceb;
 						position: absolute;
 					}
+					span:nth-of-type(1) {
+						top: 15px;
+						left: -20px;
+					}
+					span:nth-of-type(2) {
+						top: 80px;
+						left: 760px;
+					}
 				}
 				p:nth-of-type(2) {
 					font: 1.4rem/2.2rem "OpenSansRegular";
 					color: #777;
+					padding-left: 40px;
 				}
 				p:nth-of-type(3) {
 					font: 1.6rem/2.2rem "OpenSansBold";
 					color: #5b6ceb;
+					padding-left: 40px;
 				}
 			}
 			.item__next {
-				position: absolute;
-				top: 100px;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center; 
+				margin: 40px 0 0 80px;
+				img {
+					margin-right: 0;
+				}
+				.title {
+					
+					p:nth-of-type(1) {
+						font: 1.4rem/2.2rem "OpenSansBold";
+						color: #555;
+						margin-bottom: 0;
+						
+					}
+					p:nth-of-type(2) {
+						font: 1.2rem/2.2rem "OpenSansRegular";
+						color: #777;
+					}
+				}
 			}
 		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.aboutBlock {
+		.aboutBlock__desript {
+			width: 100%;
+			float: none;
+			margin-bottom: 10rem;
+		}
+		.aboutBlock__slider {
+			width: 100%;
+			position: relative;
+			left: calc(100% / 2 - 385px);
+				.single-item {
+				position: relative;
+				.slick-prev {
+					top: calc(150px - (67px/2));
+					left: -40px;
+				}
+				.slick-next {
+					bottom: calc(150px - (67px/2));
+					right: 595px;
+
+				}
+			}
+		}
+	}
+}
+.footer {
+	max-width: 1920px;
+	height: 450px;
+	margin: 0 auto;
+	background-color: #5b6ceb;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin-top: 100px;
+	color: #fff;
+	
+	.footer__about {
+		margin-right: 13rem;
+		.footer__icons {
+			display: flex;
+			i, img {
+				margin-right: 1.5rem;
+			}
+		}
+		p {
+			font: 1.4rem/2.2rem "OpenSansRegular";
+			margin-bottom: 6rem;
+		}
+		.title {
+			font: 1.8rem/2.2rem "OpenSansBold";
+			margin-bottom: 6rem;
+		}
+	}
+	.footer__contacts {
+		.contacts__block {
+			display: flex;
+		}
+	}
+	.title {
+		font: 1.8rem/2.2rem "OpenSansBold";
+		margin-bottom: 6rem;
 	}
 }
